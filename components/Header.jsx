@@ -72,7 +72,7 @@ const Header = () => {
                                     <li className={`h-max w-max 
                                         ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}
                                         `}>
-                                        <Link href={"/"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">About Us</Link>
+                                        <Link href={"/about"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">About Us</Link>
                                     </li>
                                     <li className={`h-max w-max 
                                         ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}
@@ -82,7 +82,7 @@ const Header = () => {
                                     <li className={`h-max w-max 
                                         ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}
                                         `}>
-                                        <Link href={"/"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">Contact Us</Link>
+                                        <Link href={"/contact"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">Contact Us</Link>
                                     </li>
                                 </ul>
                             </nav>
