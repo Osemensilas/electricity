@@ -84,7 +84,7 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Home Page | The Palm Haven Hotel</title>
+      <title>Home Page | BODANT INNOVATIVE RESOURCE LTD</title>
     </Head>
     <section id="home-hero" className="w-screen h-screen relative">
       <div className="absolute z-10 hidden sm:flex justify-between w-full px-4 top-1/2 -translate-y-1/2">
