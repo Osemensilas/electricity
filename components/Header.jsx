@@ -77,7 +77,7 @@ const Header = () => {
                                     <li className={`h-max w-max 
                                         ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}
                                         `}>
-                                        <Link href={"/"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">Services</Link>
+                                        <Link href={"/services"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">Services</Link>
                                     </li>
                                     <li className={`h-max w-max 
                                         ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}

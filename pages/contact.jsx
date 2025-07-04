@@ -63,23 +63,23 @@ export default function Contact() {
       <Head>
         <title>Contact Us | BODANT INNOVATIVE RESOURCE LTD</title>
       </Head>
-      <section className="relative z-10 w-screen min-h-screen flex items-center justify-center bg-offWhite py-16 px-4">
+      <section className="relative z-10 w-screen min-h-screen flex items-center justify-center bg-accent py-16 px-4">
         <div className="w-full max-w-5xl bg-transparent rounded-lg flex flex-col md:flex-row overflow-hidden">
           {/* Left: Hotel Details */}
           <div className="w-full md:w-1/2 bg-transparent text-offWhite flex flex-col justify-center p-8">
-            <h2 className="text-3xl font-bold mb-4 text-accent">Contact Information</h2>
-            <p className="mb-6 text-accent">
+            <h2 className="text-3xl font-bold mb-4 text-primary">Contact Information</h2>
+            <p className="mb-6 text-offBlack">
               BODANT INNOVATIVE RESOURCE LTD<br />
               20, Bello Street, Ikosi-Ketu,  <br />
               Lagos, Nigeria.
             </p>
             <div className="mb-4 flex items-center">
               <i className="fa fa-phone mr-2 text-primary"></i>
-              <span className="text-accent">+234 (806) 769-1079</span>
+              <span className="text-offBlack">+234 (806) 769-1079</span>
             </div>
             <div className="mb-4 flex items-center">
               <i className="fa fa-envelope mr-2 text-primary"></i>
-              <span className="text-accent">channelbukky@gmail.com</span>
+              <span className="text-offBlack">channelbukky@gmail.com</span>
             </div>
             <div className="flex gap-4 mt-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
@@ -92,8 +92,8 @@ export default function Contact() {
           </div>
           {/* Right: Contact Form */}
           <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
-            <h2 className="text-3xl text-accent font-bold mb-4 text-center md:text-left">Get in Touch</h2>
-            <p className="text-base text-accent mb-8 text-center md:text-left">
+            <h2 className="text-3xl text-primary font-bold mb-4 text-center md:text-left">Get in Touch</h2>
+            <p className="text-base text-offBlack mb-8 text-center md:text-left">
               We'd love to hear from you! Please fill out the form below and our team will get back to you as soon as possible.
             </p>
             {contactError && (
@@ -117,7 +117,7 @@ export default function Contact() {
                 name="name"
                 value={formData.name}
                 onChange={handleChanged}
-                className="px-4 py-3 rounded border border-accent text-black"
+                className="px-4 py-3 rounded border border-grey text-black"
               />
               <input
                 type="email"
@@ -125,14 +125,14 @@ export default function Contact() {
                 name="email"
                 value={formData.email}
                 onChange={handleChanged}
-                className="px-4 py-3 rounded border border-accent text-black"
+                className="px-4 py-3 rounded border border-grey text-black"
               />
               <textarea
                 placeholder="Your Message"
                 name="message"
                 value={formData.message}
                 onChange={handleChanged}
-                className="px-4 py-3 rounded border border-accent text-black"
+                className="px-4 py-3 rounded border border-grey text-black"
                 rows={5}
               />
               <button
