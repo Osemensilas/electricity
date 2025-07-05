@@ -9,14 +9,14 @@ const slides = [
   { 
     id: 1, title: "Bodant Innovation Resource Limited",
     text: "Our strength an skill in Power, Building Services, Project Management allow us to deliver complete solution to complex problem.", 
-    image: "/hero1.jpg",
+    image: "/new-hero2.jpg",
     link: '/' 
   },
   { 
     id: 2, 
     title: "Bodant Innovation Resource Limited", 
     text: "Our strength an skill in Power, Building Services, Project Management allow us to deliver complete solution to complex problem.", 
-    image: "/hero2.jpg",
+    image: "/new-hero3.jpg",
     link: '/' 
   },
 ];
@@ -167,7 +167,7 @@ export default function Home() {
       </div>
       <div className="md:w-1/2 w-full flex justify-center">
         <img 
-          src="/home-about.jpg" 
+          src="/home-contact1.jpg" 
           alt="About Bodant Innovation Resource Limited" 
           className="rounded-xl shadow-lg w-full max-w-md object-cover"
         />
@@ -244,7 +244,7 @@ export default function Home() {
     <section
       className="w-screen py-20 flex flex-col items-center justify-center text-center relative overflow-hidden"
       style={{
-        backgroundImage: "url('/home-contact.jpg')",
+        backgroundImage: "url('/home-contact1.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
