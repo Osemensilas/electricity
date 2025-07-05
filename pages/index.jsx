@@ -320,10 +320,10 @@ export default function Home() {
     <section className="w-screen h-max py-[70px] bg-white px-[40px] flex flex-col items-center justify-center relative z-10">
       <h2 className="text-offBlack text-4xl font-bold mb-10 text-center">Our Clients</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 w-full max-w-5xl items-center justify-items-center">
-        <img src="/delta-logo.png" alt="Client 1" className="h-20 object-contain grayscale hover:grayscale-0 transition duration-300" />
-        <img src="/clients/client2.png" alt="Client 2" className="h-20 object-contain grayscale hover:grayscale-0 transition duration-300" />
-        <img src="/nnpc-logo.png" alt="Client 3" className="h-20 object-contain grayscale hover:grayscale-0 transition duration-300" />
-        <img src="/total-logo.png" alt="Client 4" className="h-20 object-contain grayscale hover:grayscale-0 transition duration-300" />
+        <img src="/meetvertical.png" alt="Client 1" className="h-20 object-contain" />
+        <img src="/clients/client2.png" alt="Client 2" className="h-20 object-contain" />
+        <img src="/convergees.png" alt="Client 3" className="h-20 object-contain" />
+        <img src="/kumbit.png" alt="Client 4" className="h-20 object-contain" />
         {/* Add more client logos as needed */}
       </div>
     </section>
