@@ -138,7 +138,7 @@ export default function Home() {
     <section className="w-screen h-max py-[150px] relative z-10 bg-transparent px-[10px] sm:px-[40px]">
       <h2 className="text-center text-accent text-3xl sm:text-5xl mb-4">Why we should be your</h2>
       <h2 className="text-center text-accent text-3xl sm:text-5xl mb-10">Top Choice</h2>
-      <p className="text-accent text-center text-xl">At Bodant Innovation Resource Limited, we value every client—whether an individual or a large organization. We are committed to delivering premium services with the same level of dedication and excellence, no matter the size or scope of the project.</p>
+      <p className="text-accent text-center text-xl">At Bodant Innovative Resource Limited, we value every client—whether an individual or a large organization. We are committed to delivering premium services with the same level of dedication and excellence, no matter the size or scope of the project.</p>
       <div className="w-full h-max flex items-center justify-center mt-20">
         <Link className="px-10 py-4 border-[2px] border-primary hover:border-none bg-transparent hover:bg-primary rounded-full text-primary hover:text-offBlack transition-all duration-300 ease-in-out" href={"/about"}>Learn More</Link>
       </div>
@@ -168,7 +168,7 @@ export default function Home() {
       <div className="md:w-1/2 w-full flex justify-center">
         <img 
           src="/home-contact1.jpg" 
-          alt="About Bodant Innovation Resource Limited" 
+          alt="About Bodant Innovative Resource Limited" 
           className="rounded-xl shadow-lg w-full max-w-md object-cover"
         />
       </div>
