@@ -7,14 +7,14 @@ import ContactForm from "@/components/ContactForm";
 
 const slides = [
   { 
-    id: 1, title: "Bodant Innovation Resource Limited",
+    id: 1, title: "Bodant Innovative Resource Limited",
     text: "Our strength an skill in Power, Building Services, Project Management allow us to deliver complete solution to complex problem.", 
     image: "/new-hero2.jpg",
     link: '/' 
   },
   { 
     id: 2, 
-    title: "Bodant Innovation Resource Limited", 
+    title: "Bodant Innovative Resource Limited", 
     text: "Our strength an skill in Power, Building Services, Project Management allow us to deliver complete solution to complex problem.", 
     image: "/new-hero3.jpg",
     link: '/' 

@@ -13,10 +13,10 @@ const Footer = () => {
                 </p>
                 <div className="flex gap-4 mt-2">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                        <i className="fa fa-facebook text-5xl text-primary"></i>
+                        <i className="fa fa-facebook text-3xl text-primary"></i>
                     </a>
                     <a href="https://wa.me/2348067691079" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                        <i className="fa fa-whatsapp text-5xl text-primary"></i>
+                        <i className="fa fa-whatsapp text-3xl text-primary"></i>
                     </a>
                 </div>
                 </div>
