@@ -321,7 +321,7 @@ export default function Home() {
       <h2 className="text-offBlack text-4xl font-bold mb-10 text-center">Our Clients</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 w-full max-w-5xl items-center justify-items-center">
         <img src="/meetvertical.png" alt="Client 1" className="h-20 object-contain" />
-        <img src="/clients/client2.png" alt="Client 2" className="h-20 object-contain" />
+        <h2>FALHUM INVESTMENT LTD</h2>
         <img src="/convergees.png" alt="Client 3" className="h-20 object-contain" />
         <img src="/kumbit.png" alt="Client 4" className="h-20 object-contain" />
         {/* Add more client logos as needed */}
