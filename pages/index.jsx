@@ -9,14 +9,28 @@ const slides = [
   { 
     id: 1, title: "Bodant Innovative Resource Limited",
     text: "Our strength an skill in Power, Building Services, Project Management allow us to deliver complete solution to complex problem.", 
-    image: "/new-hero2.jpg",
+    image: "/new-hero1.jpeg",
     link: '/' 
   },
   { 
     id: 2, 
     title: "Bodant Innovative Resource Limited", 
     text: "Our strength an skill in Power, Building Services, Project Management allow us to deliver complete solution to complex problem.", 
-    image: "/new-hero3.jpg",
+    image: "/new-hero2.jpg",
+    link: '/' 
+  },
+  { 
+    id: 3, 
+    title: "Bodant Innovative Resource Limited", 
+    text: "Our strength an skill in Power, Building Services, Project Management allow us to deliver complete solution to complex problem.", 
+    image: "/new-hero3.jpeg",
+    link: '/' 
+  },
+  { 
+    id: 4, 
+    title: "Bodant Innovative Resource Limited", 
+    text: "Our strength an skill in Power, Building Services, Project Management allow us to deliver complete solution to complex problem.", 
+    image: "/new-hero4.jpeg",
     link: '/' 
   },
 ];
@@ -42,11 +56,6 @@ export default function Home() {
     { src: "/work4.jpeg", alt: "Project 4" },
     { src: "/work5.jpg", alt: "Project 5" },
     { src: "/work6.jpeg", alt: "Project 6" },
-    { src: "/work7.jpg", alt: "Project 7" },
-    { src: "/work8.jpg", alt: "Project 8" },
-    { src: "/work9.jpg", alt: "Project 9" },
-    { src: "/work10.jpeg", alt: "Project 10" },
-    // Add more as needed
   ];
 
 
@@ -100,8 +109,15 @@ export default function Home() {
           exit={{ opacity: 0, x: 100 }}
           transition={{ duration: 1 }}
           className="absolute inset-0 flex flex-col items-center justify-center bg-cover bg-center"
-          style={{ backgroundImage: `url(${slides[index].image})` }}
         >
+          <div className="absolute top-0 left-0 h-full w-full">
+            <img
+            src={slides[index].image}
+            alt=""
+            className="w-full h-full z-0"
+            style={{ pointerEvents: "none" }}
+          />
+          </div>
           <motion.h2 
           className="text-3xl sm:text-5xl z-10 text-accent font-bold mb-10 text-center" 
           initial={{ x: -100 }} animate={{ x: 0 }} 
@@ -209,7 +225,7 @@ export default function Home() {
       </div>
     </section>
     <section className="w-screen h-max py-[70px] bg-neutral-100 px-[40px] flex flex-col items-center justify-center relative z-10">
-      <h2 className="text-offBlack text-4xl font-bold mb-10 text-center">Job History</h2>
+      <h2 className="text-offBlack text-4xl font-bold mb-10 text-center">Gallery</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-5xl">
         {works.map((work, idx) => (
           <img
@@ -244,9 +260,9 @@ export default function Home() {
     <section
       className="w-screen py-20 flex flex-col items-center justify-center text-center relative overflow-hidden"
       style={{
-        backgroundImage: "url('/home-contact1.jpg')",
+        backgroundImage: "url('/new-hero1.jpeg')",
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "bottom",
         backgroundRepeat: "no-repeat",
       }}
     >
@@ -317,6 +333,34 @@ export default function Home() {
         </div>
       </div>
     </section>
+      <section className="w-screen py-20 px-4 relative z-10 sm:px-16 bg-neutralDark flex flex-col items-center justify-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-8 text-center">What Our Clients Say</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl w-full">
+          <div className="bg-white rounded-xl shadow p-8 flex flex-col">
+            <p className="text-lg text-neutralDark mb-4 italic">
+              "Bodant delivered our project on time and exceeded our expectations. Their professionalism and attention to detail are unmatched."
+            </p>
+            <div className="flex items-center gap-4 mt-auto">
+              <div>
+                <div className="font-semibold text-primary">Mrs. Adebayo</div>
+                <div className="text-sm text-gray-500">Lagos, Nigeria</div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white rounded-xl shadow p-8 flex flex-col">
+            <p className="text-lg text-neutralDark mb-4 italic">
+              "Excellent service and support throughout our facility upgrade. Highly recommended for any engineering project."
+            </p>
+            <div className="flex items-center gap-4 mt-auto">
+              <div>
+                <div className="font-semibold text-primary">Engr. Musa Bello</div>
+                <div className="text-sm text-gray-500">Abuja, Nigeria</div>
+              </div>
+            </div>
+          </div>
+          {/* Add more reviews as needed */}
+        </div>
+      </section>
     <section className="w-screen h-max py-[70px] bg-white px-[40px] flex flex-col items-center justify-center relative z-10">
       <h2 className="text-offBlack text-4xl font-bold mb-10 text-center">Our Clients</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 w-full max-w-5xl items-center justify-items-center">

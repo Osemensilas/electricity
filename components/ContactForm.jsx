@@ -161,13 +161,43 @@ const ContactForm = () => {
                             <label htmlFor="suite" className="text-grey mb-1 hidden sm:block">Location:</label>
                             <select type="text" name="suite" value={formData.location} onChange={handleChanged} id="suite" className="w-full border border-grey rounded outline-none px-3" style={{height: '40px'}}>
                                 <option value="">-- Select Location --</option>
-                                <option value="fct">FCT</option>
                                 <option value="abia">Abia</option>
                                 <option value="adamawa">Adamawa</option>
-                                <option value="akwa ibom">Akwa Ibom</option>
+                                <option value="akwa_ibom">Akwa Ibom</option>
                                 <option value="anambra">Anambra</option>
                                 <option value="bauchi">Bauchi</option>
                                 <option value="bayelsa">Bayelsa</option>
+                                <option value="benue">Benue</option>
+                                <option value="borno">Borno</option>
+                                <option value="cross_river">Cross River</option>
+                                <option value="delta">Delta</option>
+                                <option value="ebonyi">Ebonyi</option>
+                                <option value="edo">Edo</option>
+                                <option value="ekiti">Ekiti</option>
+                                <option value="enugu">Enugu</option>
+                                <option value="gombe">Gombe</option>
+                                <option value="imo">Imo</option>
+                                <option value="jigawa">Jigawa</option>
+                                <option value="kaduna">Kaduna</option>
+                                <option value="kano">Kano</option>
+                                <option value="katsina">Katsina</option>
+                                <option value="kebbi">Kebbi</option>
+                                <option value="kogi">Kogi</option>
+                                <option value="kwara">Kwara</option>
+                                <option value="lagos">Lagos</option>
+                                <option value="nasarawa">Nasarawa</option>
+                                <option value="niger">Niger</option>
+                                <option value="ogun">Ogun</option>
+                                <option value="ondo">Ondo</option>
+                                <option value="osun">Osun</option>
+                                <option value="oyo">Oyo</option>
+                                <option value="plateau">Plateau</option>
+                                <option value="rivers">Rivers</option>
+                                <option value="sokoto">Sokoto</option>
+                                <option value="taraba">Taraba</option>
+                                <option value="yobe">Yobe</option>
+                                <option value="zamfara">Zamfara</option>
+                                <option value="fct">FCT (Abuja)</option>
                             </select>
                         </div>
                     </div>

@@ -34,7 +34,7 @@ const Header = () => {
 
     return ( 
         <>
-        <header id="header" className="relative top-0 left-0 h-[100px] sm:h-[160px] w-screen px-[10px] sm:px-[40px] z-20">
+        <header id="header" className="relative h-[100px] sm:h-[160px] w-screen px-[10px] sm:px-[40px] z-20">
             <div className="w-full h-full">
                 <div className="w-full h-full flex items-center justify-between">
                     <div className="h-[75px] w-[150px] cursor-pointer">
@@ -78,6 +78,11 @@ const Header = () => {
                                         ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}
                                         `}>
                                         <Link href={"/services"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">Services</Link>
+                                    </li>
+                                    <li className={`h-max w-max 
+                                        ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}
+                                        `}>
+                                        <Link href={"/gallery"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">Gallery</Link>
                                     </li>
                                     <li className={`h-max w-max 
                                         ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}
