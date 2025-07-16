@@ -8,28 +8,28 @@ import ContactForm from "@/components/ContactForm";
 const slides = [
   { 
     id: 1, title: "Bodant Innovative Resource Limited",
-    text: "Our strength an skill in Power, Building Services, Project Management allow us to deliver complete solution to complex problem.", 
+    text: "Our strength an skill in Power, Electric Building Services, Project Management allow us to deliver complete solution to complex problem.", 
     image: "/new-hero1.jpeg",
     link: '/' 
   },
   { 
     id: 2, 
     title: "Bodant Innovative Resource Limited", 
-    text: "Our strength an skill in Power, Building Services, Project Management allow us to deliver complete solution to complex problem.", 
+    text: "Our strength an skill in Power, Electric Building Services, Project Management allow us to deliver complete solution to complex problem.", 
     image: "/new-hero2.jpg",
     link: '/' 
   },
   { 
     id: 3, 
     title: "Bodant Innovative Resource Limited", 
-    text: "Our strength an skill in Power, Building Services, Project Management allow us to deliver complete solution to complex problem.", 
+    text: "Our strength an skill in Power, Electric Building Services, Project Management allow us to deliver complete solution to complex problem.", 
     image: "/new-hero3.jpeg",
     link: '/' 
   },
   { 
     id: 4, 
     title: "Bodant Innovative Resource Limited", 
-    text: "Our strength an skill in Power, Building Services, Project Management allow us to deliver complete solution to complex problem.", 
+    text: "Our strength an skill in Power, Electric Building Services, Project Management allow us to deliver complete solution to complex problem.", 
     image: "/new-hero4.jpeg",
     link: '/' 
   },
@@ -165,13 +165,13 @@ export default function Home() {
         <h2 className="text-offBlack text-4xl font-bold mb-10">About Us</h2>
         <p className="text-neutralDark text-lg text-justify">
           BODANT INNOVATIVE RESOURCE LTD  is a modern engineering construction services firm committed to providing excellence on every project. We have established ourselves 
-          as a trusted partneclientsery industry with a strong focus on innovation, quality, and customer satisfaction in every industry.
+          as a trusted partner industry with a strong focus on innovation, quality, and customer satisfaction in every industry.
         </p>
         <p className="text-neutralDark text-lg mb-20 text-justify">
           We have established ourselves as a reliable partner. 
           MEP Building Services, Renewable Energy, Extra Low Voltages, Power Distribution, and 
           Project Management are some of our specialties. BODANT INNOVATIVE RESOURCE 
-          LTD is capable of carrying out projects of all sizes for commercial, residential, 
+          LTD is capable of carrying out projects of all sizes for commercial, residential, institutional, and industrial use.
 
         </p>
         <Link 

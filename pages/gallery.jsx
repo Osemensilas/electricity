@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const galleryImages = [
   { src: "/work1.jpeg", alt: "Project 1" },
@@ -14,6 +15,10 @@ const galleryImages = [
   { src: "/work10.jpeg", alt: "Project 10" },
   { src: "/work11.jpg", alt: "Project 11" },
   { src: "/work12.jpg", alt: "Project 12" },
+  { src: "/work13.jpg", alt: "Project 13" },
+  { src: "/work14.jpg", alt: "Project 14" },
+  { src: "/work15.jpg", alt: "Project 15" },
+  { src: "/work16.jpeg", alt: "Project 16" },
   // Add more images as needed
 ];
 
@@ -26,7 +31,12 @@ export default function Gallery() {
         <title>Gallery | BODANT INNOVATIVE RESOURCE LTD</title>
       </Head>
       <section className="w-screen min-h-[60vh] py-20 px-4 sm:px-16 z-10 relative bg-white flex flex-col items-center justify-center">
-        <h1 className="text-4xl sm:text-5xl font-bold text-primary mb-6 text-center">Project Gallery</h1>
+        <motion.h1 
+        className="text-4xl sm:text-5xl font-bold text-primary mb-6 text-center"
+        initial={{ y: 100, opacity: 0 }} 
+        animate={{ y: 0, opacity: 1 }} 
+        transition={{ duration: 2 }}
+        >Project Gallery</motion.h1>
         <p className="max-w-3xl text-lg text-neutralDark mb-12 text-center">
           Explore some of our completed projects and works. Click on any image to view it in a larger size.
         </p>

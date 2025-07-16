@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -40,7 +41,12 @@ const Services = () => {
         <title>Our Services | BODANT INNOVATIVE RESOURCE LTD</title>
       </Head>
       <section className="relative z-10 w-screen min-h-[60vh] py-20 px-4 sm:px-16 bg-white flex flex-col items-center justify-center">
-        <h1 className="text-4xl sm:text-5xl font-bold text-primary mb-6 text-center">Our Services</h1>
+        <motion.h1 
+        className="text-4xl sm:text-5xl font-bold text-primary mb-6 text-center"
+        initial={{ y: 100, opacity: 0 }} 
+        animate={{ y: 0, opacity: 1 }} 
+        transition={{ duration: 2 }}
+        >Our Services</motion.h1>
         <p className="max-w-3xl text-lg text-neutralDark mb-12 text-center">
           We offer a wide range of engineering and facility management services tailored to meet the unique needs of our clients. Explore our core offerings below.
         </p>

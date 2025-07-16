@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 const About = () => {
     return (
@@ -7,7 +8,12 @@ const About = () => {
                 <title>About Us | BODANT INNOVATIVE RESOURCE LTD</title>
             </Head>
             <section className="relative w-screen min-h-[60vh] py-20 px-4 sm:px-16 bg-white flex flex-col items-center justify-center z-10">
-                <h1 className="text-4xl sm:text-5xl font-bold text-primary mb-6 text-center">About Us</h1>
+                <motion.h1 
+                className="text-4xl sm:text-5xl font-bold text-primary mb-6 text-center"
+                initial={{ y: 100, opacity: 0 }} 
+                animate={{ y: 0, opacity: 1 }} 
+                transition={{ duration: 2 }}
+                >About Us</motion.h1>
                 <p className="max-w-4xl text-lg text-neutralDark mb-8">
                     <span className="font-semibold">BODANT INNOVATIVE RESOURCE LTD</span> is a modern engineering construction services firm committed to providing excellence on every project. 
                     We have established ourselves as a trusted partner in the industry with a strong focus on innovation, quality, and customer satisfaction.
