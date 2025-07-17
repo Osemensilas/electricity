@@ -256,8 +256,8 @@ export default function Home() {
           </button>
         </div>
       )}
-      <div className="">
-        <Link href="/gallery.jsx" className="px-10 py-3 border-[2px] border-primary hover:border-none bg-transparent hover:bg-primary rounded-full text-primary hover:text-offBlack transition-all duration-300 ease-in-out">View Wore</Link>
+      <div className="h-max w-full mt-20 flex items-start justify-center">
+        <Link href="/gallery" className="px-10 py-3 border-[2px] border-primary hover:border-none bg-transparent hover:bg-primary rounded-full text-primary hover:text-offBlack transition-all duration-300 ease-in-out">View Wore</Link>
       </div>
     </section>
     <section

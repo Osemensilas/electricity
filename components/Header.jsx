@@ -34,7 +34,7 @@ const Header = () => {
 
     return ( 
         <>
-        <header id="header" className="relative h-[100px] sm:h-[160px] w-screen px-[10px] sm:px-[40px] z-20">
+        <header id="header" className="relative h-[100px] sm:h-[160px] w-screen px-[10px] sm:px-[40px]">
             <div className="w-full h-full">
                 <div className="w-full h-full flex items-center justify-between">
                     <div className="h-[75px] w-[150px] cursor-pointer">
