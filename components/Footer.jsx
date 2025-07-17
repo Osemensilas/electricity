@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12">
                 {/* Logo and description */}
                 <div className="flex-1 flex flex-col items-center md:items-start">
-                <img src="/logo.png" alt="Bodant Logo" className="h-16 mb-4" />
+                <img src="/bodand-logo.png" alt="Bodant Logo" className="h-[50px] w-[100px] mb-4" />
                 <p className="text-gray-300 mb-4 max-w-xs text-center md:text-left">
                     Bodant Innovation Resource Limited – Engineering excellence, innovative solutions, and reliable facility management.
                 </p>

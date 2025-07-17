@@ -8,21 +8,21 @@ import ContactForm from "@/components/ContactForm";
 const slides = [
   { 
     id: 1, title: "Bodant Innovative Resource Limited",
-    text: "Our strength an skill in Power, Electric Building Services, Project Management allow us to deliver complete solution to complex problem.", 
+    text: "Our strength and skill in Power, Electrical Building Services, Project Management allow us to deliver complete solution to complex problem.", 
     image: "/new-hero1.jpeg",
     link: '/' 
   },
   { 
     id: 2, 
     title: "Bodant Innovative Resource Limited", 
-    text: "Our strength an skill in Power, Electric Building Services, Project Management allow us to deliver complete solution to complex problem.", 
+    text: "Our strength and skill in Power, Electrical Building Services, Project Management allow us to deliver complete solution to complex problem.", 
     image: "/new-hero2.jpg",
     link: '/' 
   },
   { 
     id: 3, 
     title: "Bodant Innovative Resource Limited", 
-    text: "Our strength an skill in Power, Electric Building Services, Project Management allow us to deliver complete solution to complex problem.", 
+    text: "Our strength and skill in Power, Electrical Building Services, Project Management allow us to deliver complete solution to complex problem.", 
     image: "/new-hero3.jpeg",
     link: '/' 
   },
@@ -256,6 +256,9 @@ export default function Home() {
           </button>
         </div>
       )}
+      <div className="">
+        <Link href="/gallery.jsx" className="px-10 py-3 border-[2px] border-primary hover:border-none bg-transparent hover:bg-primary rounded-full text-primary hover:text-offBlack transition-all duration-300 ease-in-out">View Wore</Link>
+      </div>
     </section>
     <section
       className="w-screen py-20 flex flex-col items-center justify-center text-center relative overflow-hidden"
