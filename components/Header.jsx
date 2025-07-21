@@ -41,7 +41,7 @@ const Header = () => {
                         <img className="w-full h-full" src="/bodand-logo.png" alt="" />
                     </div>
                     <div className={`sm:flex w-max h-max flex-col 
-                        ${openNav ? "p-[20px] flex flex-col fixed top-0 left-0 w-screen h-screen bg-neutralDark items-start" : "hidden items-end"}
+                        ${openNav ? "p-[20px] flex flex-col fixed top-0 left-0 w-screen h-screen bg-neutralDark items-start z-20" : "hidden items-end"}
                         `}>
                         <div className={`w-max h-max mb-[20px]
                             ${openNav ? "flex-col" : "flex items-center justify-end"}
@@ -103,8 +103,8 @@ const Header = () => {
                     <div onClick={hamClicked} className={`h-[40px] w-[40px] relative
                         ${openNav ? "z-[999]" : "sm:hidden"}
                         `}>
-                        <span className={`absolute after:absolute before:absolute before:content-[''] after:content-[''] before:top-[5px] after:top-[-5px] before:left-0 after:left-0 before:h-[2px] after:h-[2px] before:w-[30px] after:w-[30px] before:bg-accent after:bg-accent top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] h-[2px] w-[30px] bg-accent
-                            ${openNav ? "h-0 w-0 after:rotate-45 before:-rotate-45 after:top-[-2px] before:top-[-2px] after:-left-[15px] before:-left-[15px] transition-all ease-in-out duration-300" : ""}
+                        <span className={`ham absolute after:absolute before:absolute before:content-[''] after:content-[''] before:top-[5px] after:top-[-5px] before:left-0 after:left-0 before:h-[2px] after:h-[2px] before:w-[30px] after:w-[30px] before:bg-accent after:bg-accent top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] h-[2px] w-[30px] bg-accent
+                            ${openNav ? "active" : ""}
                             `}></span>
                     </div>
                 </div>
