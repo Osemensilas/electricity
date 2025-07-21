@@ -16,6 +16,14 @@ const Header = () => {
         }
     }
 
+    const linkClicked = () => {
+        if (hamOpen === true){
+            setHamOpen(false);
+        }else{
+            setHamOpen(true);
+        }
+    }
+
     useEffect(() => {
         if (hamOpen === true){
             setOpenNav(true);
@@ -64,27 +72,27 @@ const Header = () => {
                                 <ul className={`h-max w-max flex 
                                     ${openNav ? "flex-col" : "items-center"}
                                     `}>
-                                    <li className={`h-max w-max 
+                                    <li onClick={linkClicked} className={`h-max w-max 
                                         ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}
                                         `}>
                                         <Link href={"/"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">Home</Link>
                                     </li>
-                                    <li className={`h-max w-max 
+                                    <li onClick={linkClicked} className={`h-max w-max 
                                         ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}
                                         `}>
                                         <Link href={"/about"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">About Us</Link>
                                     </li>
-                                    <li className={`h-max w-max 
+                                    <li onClick={linkClicked} className={`h-max w-max 
                                         ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}
                                         `}>
                                         <Link href={"/services"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">Services</Link>
                                     </li>
-                                    <li className={`h-max w-max 
+                                    <li onClick={linkClicked} className={`h-max w-max 
                                         ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}
                                         `}>
                                         <Link href={"/gallery"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">Gallery</Link>
                                     </li>
-                                    <li className={`h-max w-max 
+                                    <li onClick={linkClicked} className={`h-max w-max 
                                         ${openNav ? "ml-0 mb-[20px]" : "ml-[40px]"}
                                         `}>
                                         <Link href={"/contact"} className="text-accent text-base hover:text-primary hover:underline transition-all duration-300">Contact Us</Link>
