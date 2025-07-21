@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const galleryImages = [
   { src: "/work1.jpeg", alt: "2 X 1MVA transformers installed at NPDC, Benin City" },
   { src: "/work2.jpg", alt: "Installation of PVC pipes on several projects" },
-  { src: "/work3.jpeg", alt: "Project 3" },
+  { src: "/work3.jpeg", alt: "Metering system for 33KV supply line" },
   { src: "/work4.jpeg", alt: "4 X 650KVA generators installed with termination of supply cable"},
-  { src: "/work5.jpg", alt: "Project 5", description: "Description for Project 5" },
+  { src: "/work5.jpg", alt: "800A gear switch installed for Auditorium building, NPDC, Benin City" },
   { src: "/work6.jpeg", alt: "33KV ABB HT panel installed and commissioned with two outgoing"},
   { src: "/work7.jpg", alt: "Installation of ANSELL fluorescent lamp at NPDC Benin City" },
   { src: "/work8.jpg", alt: "Cable tray installation at NLNG head office Amadi, Port Harcourt"},
