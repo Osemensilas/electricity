@@ -50,12 +50,12 @@ export default function Home() {
   const [expandedImg, setExpandedImg] = useState(null);
 
   const works = [
-    { src: "/work1.jpeg", alt: "Project 1" },
-    { src: "/work2.jpg", alt: "Project 2" },
-    { src: "/work3.jpeg", alt: "Project 3" },
-    { src: "/work4.jpeg", alt: "Project 4" },
-    { src: "/work5.jpg", alt: "Project 5" },
-    { src: "/work6.jpeg", alt: "Project 6" },
+    { src: "/work1.jpeg", alt: "2 X 1MVA transformers installed at NPDC, Benin City" },
+    { src: "/work2.jpg", alt: "Installation of PVC pipes on several projects" },
+    { src: "/work3.jpeg", alt: "Project 1"},
+    { src: "/work4.jpeg", alt: "4 X 650KVA generators installed with termination of supply cable"},
+    { src: "/work5.jpg", alt: "Project 1"},
+    { src: "/work6.jpeg", alt: "33KV ABB HT panel installed and commissioned with two outgoing"},
   ];
 
 
@@ -233,27 +233,33 @@ export default function Home() {
             src={work.src}
             alt={work.alt}
             className="rounded-xl shadow-md cursor-pointer object-cover w-full h-60 transition-transform duration-300 hover:scale-105"
-            onClick={() => setExpandedImg(work.src)}
+            onClick={() => setExpandedImg({ src: work.src, alt: work.alt, idx })}
           />
         ))}
       </div>
-      {/* Modal for expanded image */}
+      {/* Modal for expanded image and description */}
       {expandedImg && (
         <div
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
           onClick={() => setExpandedImg(null)}
         >
-          <img
-            src={expandedImg}
-            alt="Expanded Work"
-            className="max-w-full max-h-full rounded-xl shadow-2xl"
-          />
-          <button
-            className="absolute top-8 right-8 text-white text-4xl font-bold"
-            onClick={() => setExpandedImg(null)}
-          >
-            &times;
-          </button>
+          <div className="relative flex flex-col items-center">
+            <img
+              src={expandedImg.src}
+              alt={expandedImg.alt}
+              className="max-w-full max-h-[70vh] rounded-xl shadow-2xl mb-6"
+            />
+            <div className="bg-white bg-opacity-90 rounded-lg px-6 py-4 shadow text-center max-w-lg">
+              <h3 className="text-xl font-bold text-offBlack mb-2">{expandedImg.alt}</h3>
+              {/* Optional: Add more description here if available */}
+            </div>
+            <button
+              className="absolute top-0 right-0 text-white text-4xl font-bold mt-2 mr-2"
+              onClick={() => setExpandedImg(null)}
+            >
+              &times;
+            </button>
+          </div>
         </div>
       )}
       <div className="h-max w-full mt-20 flex items-start justify-center">
