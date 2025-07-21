@@ -23,7 +23,7 @@ const slides = [
     id: 3, 
     title: "Bodant Innovative Resource Limited", 
     text: "Our strength and skill in Power, Electrical Building Services, Project Management allow us to deliver complete solution to complex problem.", 
-    image: "/new-hero3.jpeg",
+    image: "/work14.jpg",
     link: '/' 
   },
   { 
@@ -95,7 +95,7 @@ export default function Home() {
     <Head>
       <title>Home Page | BODANT INNOVATIVE RESOURCE LTD</title>
     </Head>
-    <section id="home-hero" className="w-screen h-screen relative">
+    <section id="home-hero" className="w-screen h-[calc(100vh-120px)] sm:h-screen relative">
       <div className="absolute z-10 hidden sm:flex justify-between w-full px-4 top-1/2 -translate-y-1/2">
         <button className="p-8 border text-accent border-accent rounded-full text-4xl" onClick={() => setIndex((prev) => (prev - 1 + slides.length) % slides.length)}>‹</button>
         <button className="p-8 border text-accent border-accent rounded-full text-4xl" onClick={() => setIndex((prev) => (prev + 1) % slides.length)}>›</button>
@@ -126,10 +126,9 @@ export default function Home() {
             {slides[index].title}
           </motion.h2>
           <motion.h3 
-          className="text-xl text-center text-accent z-10 mb-20" 
+          className="text-xl text-center text-accent z-10 mb-20 px-[10px] sm:px-[250px]" 
           initial={{ x: -100 }} animate={{ x: 0 }} 
-          transition={{ duration: 1.5 }}
-          style={{paddingRight: '10px', paddingLeft: '10px'}}>
+          transition={{ duration: 1.5 }}>
             {slides[index].text}
           </motion.h3>
           <motion.div className="z-10" initial={{ y: 100 }} animate={{ y: 0 }} transition={{ duration: 1.8 }}>
